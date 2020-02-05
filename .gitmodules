@@ -1,0 +1,3 @@
+[submodule "AK-service"]
+	path = AK-service
+	url = https://github.com/7-xillow/AK-service
