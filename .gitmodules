@@ -1,3 +1,6 @@
 [submodule "AK-service"]
 	path = AK-service
 	url = https://github.com/7-xillow/AK-service
+[submodule "JD-service"]
+	path = JD-service
+	url = https://github.com/7-xillow/JD-service
