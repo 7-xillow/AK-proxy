@@ -1,0 +1,12 @@
+[submodule "submodule/AK-service"]
+	path = submodule/AK-service
+	url = https://github.com/7-xillow/AK-service
+[submodule "submodule/JD-service"]
+	path = submodule/JD-service
+	url = https://github.com/7-xillow/JD-service
+[submodule "submodule/sb-service"]
+	path = submodule/sb-service
+	url = https://github.com/7-xillow/sb-service
+[submodule "submodule/HT-service"]
+	path = submodule/HT-service
+	url = https://github.com/7-xillow/HT-service
