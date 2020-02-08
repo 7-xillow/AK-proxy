@@ -19,7 +19,7 @@ app.use('/', express.static(path.join(__dirname, './client/dist')));
 
 // request for data from Albert's summary module
 app.get(/\/api\/summary/, (req, res) => {
-  const requestTo = 'http://localhost:3002'+req.originalUrl;
+  const requestTo = 'http://3.17.76.247:3002'+req.originalUrl;
   const option = {
     method: 'GET'
   };
@@ -67,7 +67,7 @@ app.get('/seed', (req, res) => {
 
 // request for data from Shreeya's neighborhood module
 app.get('/listings', (req, res) => {
-  const requestTo = 'http://13.57.29.35:3001/listings';
+  const requestTo = 'http://52.53.150.79:3001//listings';
   const option = {
     method: 'GET'
   };
