@@ -34,16 +34,14 @@ app.get(/\/api\/summary/, (req, res) => {
 });
 
 // request for data from Hsin's photo module
-app.get(/\/api\/photo/, (req, res) => {
-  const requestTo = 'http://localhost:3004/api/photo';
+app.get('/houses', (req, res) => {
+  const requestTo = 'http://18.144.88.205:3004/houses';
   const option = {
     method: 'GET'
   };
 
-
   axios.get(requestTo, option)
     .then((resFromDB) => {
-      console.log('success');
       res.send(resFromDB.data);
     })
     .catch((err) => {
@@ -52,8 +50,8 @@ app.get(/\/api\/photo/, (req, res) => {
 });
 
 // request for data from Jialu's homevalue module
-app.get(/\/api\/homevalue/, (req, res) => {
-  const requestTo = 'http://localhost:3003/seed';
+app.get('/seed', (req, res) => {
+  const requestTo = 'http://18.223.108.8:3003/seed';
   const option = {
     method: 'GET'
   };
@@ -68,8 +66,8 @@ app.get(/\/api\/homevalue/, (req, res) => {
 });
 
 // request for data from Shreeya's neighborhood module
-app.get(/\/api\/neighborhood/, (req, res) => {
-  const requestTo = 'http://localhost:3001/listings';
+app.get('/listings', (req, res) => {
+  const requestTo = 'http://13.57.29.35:3001/listings';
   const option = {
     method: 'GET'
   };
