@@ -9,4 +9,3 @@
 	url = https://github.com/7-xillow/sb-service
 [submodule "submodule/HT-service"]
 	path = submodule/HT-service
-	url = https://github.com/7-xillow/HT-service
