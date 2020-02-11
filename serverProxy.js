@@ -19,7 +19,7 @@ app.use('/', express.static(path.join(__dirname, './client/dist')));
 
 // request for data from Albert's summary module
 app.get(/\/api\/summary/, (req, res) => {
-  const requestTo = 'http://18.216.204.163/:3002'+req.originalUrl;
+  const requestTo = 'http://18.216.204.163:3002'+req.originalUrl;
   const option = {
     method: 'GET'
   };
