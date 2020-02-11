@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require("axios");
 const morgan = require('morgan');
-const cors = require('cors');
+// const cors = require('cors');
 const port = 3000;
 const path = require('path');
 
