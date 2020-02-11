@@ -1,7 +1,7 @@
 const express = require('express');
 const axios = require("axios");
 const morgan = require('morgan');
-const cors = require('cors');
+//const cors = require('cors');
 const port = 3000;
 const path = require('path');
 
@@ -19,7 +19,7 @@ app.use('/', express.static(path.join(__dirname, './client/dist')));
 
 // request for data from Albert's summary module
 app.get(/\/api\/summary/, (req, res) => {
-  const requestTo = 'http://3.17.76.247:3002'+req.originalUrl;
+  const requestTo = 'http://18.216.204.163/:3002'+req.originalUrl;
   const option = {
     method: 'GET'
   };
@@ -67,7 +67,7 @@ app.get('/seed', (req, res) => {
 
 // request for data from Shreeya's neighborhood module
 app.get('/listings', (req, res) => {
-  const requestTo = 'http://52.53.150.79:3001//listings';
+  const requestTo = 'http://52.53.150.79:3001/listings';
   const option = {
     method: 'GET'
   };
